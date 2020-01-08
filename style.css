@@ -1,8 +1,8 @@
 body {
-    background-color: #f4f4f4;
+    background-color: #e0e0e0;
     color:#555;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16x;
+    font-size: 16px;
     line-height: 1.6em;
     margin: 0;
 }
@@ -11,6 +11,7 @@ body {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    font-variant: small-caps;
 }
 
 #main-header {
@@ -21,11 +22,66 @@ body {
 .subheading {
     padding-left: 2em;
     font: italic 15px Georgia, sans-serif;
+    font-variant: normal;
 }
 
 #main-header h2 {
     color: #eeeeee
 }
+
+#message-history {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    text-indent: 1em;
+    vertical-align: bottom;
+    background-color: whitesmoke;
+    margin-top: 1em;
+    height: 15em;
+    border-radius: 0.6em;
+    display: flex;
+    width: 80%
+}
+
+#message-history div {
+    text-align: left;
+    align-self: flex-end;
+}
+
+li {
+    list-style-type: none;
+}
+
+#message-input {
+    margin: auto;
+    margin-top: 1em;
+    align-content: center;
+    text-align: center;
+    width: 80%
+}
+
+#input-message {
+    border-radius: 0.6em;
+    font-size: 14pt;
+    text-indent: 0.6em;
+    width: 84%;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 14pt;
+    border-radius: 0.4em;
+    width: 15%;
+}
+
+.btn:hover {
+    background-color: cadetblue;
+}
+
+
 
 
 @media(max-width: 800px) {
